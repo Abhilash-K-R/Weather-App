@@ -5,7 +5,7 @@ import requests
 class WeatherApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Weather App")
+        self.title("Weather App") 
 
         # Default preferences
         self.units = tk.StringVar(value="metric")  # Default to metric (Celsius)
