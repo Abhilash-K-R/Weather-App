@@ -5,7 +5,7 @@ import requests
 class WeatherApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Weather App")
+        self.title("Weather App") 
 
         # Create main frame
         self.main_frame = ttk.Frame(self)
