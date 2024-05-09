@@ -40,20 +40,7 @@ class WeatherApp(tk.Tk):
         self.update_weather()
 
     def update_weather(self):
-        # Call function to fetch current weather data
-        # Update labels with fetched weather information
-        # Example:
-        location = "New York"
-        temperature = "23°C"
-        humidity = "65%"
-        wind_speed = "10 km/h"
-        visibility = "8 km"
 
-        self.location_label.config(text=location)
-        self.temp_label.config(text=temperature)
-        self.humidity_label.config(text=humidity)
-        self.wind_label.config(text=wind_speed)
-        self.visibility_label.config(text=visibility)
 
 if __name__ == "__main__":
     app = WeatherApp()
