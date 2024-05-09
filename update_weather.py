@@ -7,6 +7,18 @@ class WeatherApp(tk.Tk):
         self.title("Weather App")
 
         # Create main frame
+        self.main_frame = ttk.Frame(self)
+        self.main_frame.pack(padx=20, pady=20)
+
+        # Weather information labels
+        ttk.Label(self.main_frame, text="Current Weather", font=("Helvetica", 16, "bold")).grid(row=0, column=0, columnspan=2, pady=10)
+        ttk.Label(self.main_frame, text="Location:").grid(row=1, column=0, sticky="E", padx=5)
+        self.location_label = ttk.Label(self.main_frame, text="", font=("Helvetica", 12))
+        self.location_label.grid(row=1, column=1, sticky="W", padx=5)
+        
+        ttk.Label(self.main_frame, text="Temperature:").grid(row=2, column=0, sticky="E", padx=5)
+        self.temp_label = ttk.Label(self.main_frame, text="", font=("Helvetica", 12))
+        self.temp_label.grid(row=2, column=1, sticky="W", padx=5)
 
         ttk.Label(self.main_frame, text="Humidity:").grid(row=3, column=0, sticky="E", padx=5)
         self.humidity_label = ttk.Label(self.main_frame, text="", font=("Helvetica", 12))
