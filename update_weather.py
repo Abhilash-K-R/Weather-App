@@ -41,7 +41,3 @@ class WeatherApp(tk.Tk):
 
     def update_weather(self):
 
-
-if __name__ == "__main__":
-    app = WeatherApp()
-    app.mainloop()
