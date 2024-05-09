@@ -1,14 +1,4 @@
-import tkinter as tk
-from tkinter import ttk
 
-class WeatherApp(tk.Tk):
-    def __init__(self):
-        super().__init__()
-        self.title("Weather App")
-
-        # Create main frame
-        self.main_frame = ttk.Frame(self)
-        self.main_frame.pack(padx=20, pady=20)
 
         # Weather information labels
         ttk.Label(self.main_frame, text="Current Weather", font=("Helvetica", 16, "bold")).grid(row=0, column=0, columnspan=2, pady=10)
